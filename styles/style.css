@@ -111,8 +111,7 @@ h3 {
 h1 {
   font-size: 1.375rem;
 }
-h2,
-h3 {
+h2 {
   font-size: 1.25rem;
 }
 
@@ -120,10 +119,10 @@ h3 {
   background-color: var(--Pink);
   border: none;
   color: var(--Very-Pale-Blue);
-  padding: .6875rem 2.25rem;
+  padding: 0.6875rem 2.25rem;
   border-radius: 1.25rem;
   font-weight: var(--fw-bold);
-  font-size: .75rem;
+  font-size: 0.75rem;
 }
 
 /* */
@@ -142,10 +141,26 @@ h3 {
   color: gray;
 }
 
+footer {
+  background-color: var(--Very-Dark-Cyan);
+  color: var(--Very-Pale-Blue);
+}
+
+footer h3 {
+  text-transform: uppercase;
+}
+
+#white_logo {
+  width: 12rem;
+}
+
+address {
+  font-style: normal;
+}
+
 .attribution {
   font-size: 0.6875rem;
   text-align: center;
-  margin: 2rem 0;
 }
 
 .attribution a {
