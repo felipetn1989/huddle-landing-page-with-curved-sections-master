@@ -23,14 +23,16 @@
     </header>
 
     <main class="card">
-      <h1>Build The Community Your Fans Will Love</h1>
-      <p>
-        Huddle re-imagines the way we build communities. You have a voice, but
-        so does your audience. Create connections with your users as you engage
-        in genuine discussion.
-      </p>
-      <button class="start">Get Started For Free</button>
-      <img src="images/screen-mockups.svg" alt="" aria-hidden="true" />
+      <div class="card__top">
+        <h1>Build The Community Your Fans Will Love</h1>
+        <p>
+          Huddle re-imagines the way we build communities. You have a voice, but
+          so does your audience. Create connections with your users as you
+          engage in genuine discussion.
+        </p>
+        <button class="start">Get Started For Free</button>
+        <img src="images/screen-mockups.svg" alt="" aria-hidden="true" />
+      </div>
       <div class="flex_group">
         <div class="stats">
           <img
@@ -46,42 +48,49 @@
           <span class="stats__text">Messages Sent</span>
         </div>
       </div>
-      <div class="light_blue">
+      <div class="light_blue grow">
         <img
           src="images/illustration-grow-together.svg"
           alt="A drawing of a man and a woman next to giant social media posts"
         />
-        <h2>Grow Together</h2>
-        <p>
-          Generate meaningful discussions with your audience and build a strong,
-          loyal community. Think of the insightful conversations you miss out on
-          with a feedback form.
-        </p>
+        <div class="grow__text">
+          <h2>Grow Together</h2>
+          <p>
+            Generate meaningful discussions with your audience and build a
+            strong, loyal community. Think of the insightful conversations you
+            miss out on with a feedback form.
+          </p>
+        </div>
       </div>
-      <div class="white">
+      <div class="white flowing">
         <img
           src="images/illustration-flowing-conversation.svg"
           alt="A drawing of a group of people chatting on a table next to trees"
         />
-        <h2>Flowing Conversations</h2>
-        <p>
-          You wouldn't paginate a conversation in real life, so why do it
-          online? Our threads have just-in-time loading for a more natural flow.
-        </p>
+        <div class="flowing__text">
+          <h2>Flowing Conversations</h2>
+          <p>
+            You wouldn't paginate a conversation in real life, so why do it
+            online? Our threads have just-in-time loading for a more natural
+            flow.
+          </p>
+        </div>
       </div>
-      <div class="light_blue">
+      <div class="light_blue users">
         <img
           src="images/illustration-your-users.svg"
           alt="A drawing of a group of people holding giant social media posts"
         />
-        <h2>Your Users</h2>
-        <p>
-          It takes no time at all to integrate Huddle with your app's
-          authentication solution. This means, once signed in to your app, your
-          users can start chatting immediately.
-        </p>
+        <div class="users__text">
+          <h2>Your Users</h2>
+          <p>
+            It takes no time at all to integrate Huddle with your app's
+            authentication solution. This means, once signed in to your app,
+            your users can start chatting immediately.
+          </p>
+        </div>
       </div>
-      <div class="white">
+      <div class="white ready">
         <h2>Ready To Build Your Community?</h2>
         <button class="start">Get Started For Free</button>
       </div>
@@ -93,7 +102,10 @@
           To recieve tips on how to grow your community, sign up to our weekly
           newsletter. We’ll never send you spam or pass on your email address
         </p>
-        <button class="subscribe">Subscribe</button>
+        <form action="#" method="post">
+          <input type="email" name="fmail" id="ifmail" />
+          <button class="subscribe">Subscribe</button>
+        </form>
       </div>
       <address>
         <img id="white_logo" src="images/logo-white.png" alt="Huddle logo" />
@@ -111,11 +123,9 @@
         </div>
       </address>
 
-      <div class="icons">
-        <ion-icon name="logo-facebook"></ion-icon>
-        <ion-icon name="logo-instagram"></ion-icon>
-        <ion-icon name="logo-twitter"></ion-icon>
-      </div>
+      <ion-icon name="logo-facebook"></ion-icon>
+      <ion-icon name="logo-instagram"></ion-icon>
+      <ion-icon name="logo-twitter"></ion-icon>
 
       <p class="attribution">
         Challenge by

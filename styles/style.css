@@ -98,7 +98,8 @@ h6 {
 
 body {
   font-family: var(--ff-body);
-  font-size: 0.875rem;
+  font-weight: var(--fw-semi-bold);
+  font-size: 0.8125rem;
   color: var(--Very-Dark-Cyan);
 }
 
@@ -123,12 +124,63 @@ h2 {
   border-radius: 1.25rem;
   font-weight: var(--fw-bold);
   font-size: 0.75rem;
+  width: 13rem;
+}
+
+header {
+  padding: 1.25rem;
+}
+
+main,
+footer {
+  padding: 2.5rem;
 }
 
 /* */
 
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.try {
+  border: none;
+  padding: 0.25rem 1.25rem;
+  font-size: 0.75rem;
+  border-radius: 1rem;
+  color: var(--Pink);
+  background-color: white;
+  border: 1px solid var(--Pink);
+}
+
+header > img {
+  width: 6rem;
+}
+
+.card__top {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.75rem;
+  margin-bottom: 6rem;
+}
+
+.card__top button {
+  margin-top: 1rem;
+  margin-bottom: 4rem;
+}
+
+.stats {
+  display: grid;
+  place-items: center;
+  margin: 4.5rem;
+}
+
 .stats > img {
   width: 2rem;
+  place-self: center start;
 }
 
 .stats__number {
@@ -141,6 +193,29 @@ h2 {
   color: gray;
 }
 
+.grow,
+.flowing,
+.users {
+  display: grid;
+  gap: 4rem;
+  text-align: center;
+}
+
+.grow__text,
+.flowing__text,
+.users__text {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.ready {
+  display: grid;
+  place-items: center;
+  text-align: center;
+  gap: 1.5rem;
+}
+
 footer {
   background-color: var(--Very-Dark-Cyan);
   color: var(--Very-Pale-Blue);
@@ -150,12 +225,61 @@ footer h3 {
   text-transform: uppercase;
 }
 
+.newsletter {
+  display: grid;
+  gap: 1rem;
+  margin-bottom: 7rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+#ifmail {
+  height: 2.8125rem;
+  width: 100%;
+  border-radius: 0.375rem;
+}
+
+.subscribe {
+  color: white;
+  background-color: var(--Pink);
+  border: none;
+  padding: 0.875rem 2.25rem;
+  border-radius: 0.375rem;
+  font-weight: var(--fw-bold);
+  align-self: flex-end;
+  width: 9rem;
+}
+
 #white_logo {
-  width: 12rem;
+  width: 11rem;
 }
 
 address {
   font-style: normal;
+  display: grid;
+  gap: 1rem;
+}
+
+address > p {
+  margin-bottom: 1rem;
+}
+
+.phone,
+.email {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+
+
+ion-icon {
+  margin-right: .75rem;
+  height: 3rem;
 }
 
 .attribution {
