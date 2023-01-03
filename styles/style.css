@@ -172,10 +172,17 @@ header > img {
   margin-bottom: 4rem;
 }
 
+.flex_group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .stats {
   display: grid;
   place-items: center;
   margin: 4.5rem;
+  max-width: 8rem;
 }
 
 .stats > img {
@@ -199,6 +206,7 @@ header > img {
   display: grid;
   gap: 4rem;
   text-align: center;
+  place-items: center;
 }
 
 .grow__text,
@@ -262,10 +270,14 @@ address {
   font-style: normal;
   display: grid;
   gap: 1rem;
+  font-weight: var(--fw-regular);
+  font-size: .8125rem;
+  margin-bottom: 3rem;
 }
 
 address > p {
-  margin-bottom: 1rem;
+  margin-bottom: 1.75rem;
+
 }
 
 .phone,
@@ -275,14 +287,18 @@ address > p {
   align-items: center;
 }
 
-
+.icons {
+  display: flex;
+  gap: 1rem;
+}
 
 ion-icon {
-  margin-right: .75rem;
-  height: 3rem;
+  width: 1.5rem;
+  height: 1.5rem;
 }
 
 .attribution {
+  margin-top: 3rem;
   font-size: 0.6875rem;
   text-align: center;
 }
