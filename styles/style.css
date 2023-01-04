@@ -176,13 +176,12 @@ header > img {
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 5rem;
 }
 
 .stats {
   display: grid;
   place-items: center;
-  margin: 4.5rem;
-  max-width: 8rem;
 }
 
 .stats > img {
