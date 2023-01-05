@@ -137,6 +137,15 @@ footer {
   padding: 1.75rem;
 }
 
+.curve {
+  margin: auto;
+  width: 100%;
+}
+
+.light_blue {
+  background-color: var(--Very-Pale-Blue);
+}
+
 /* Buttons */
 
 .button {
@@ -199,53 +208,24 @@ ion-icon {
 
 .card {
   display: grid;
-  gap: 15rem;
-}
-
-.users::before {
-  content: "";
-  background: url(../images/bg-section-top-mobile-2.svg) no-repeat center;
-  background-size: cover;
-  width: 100%;
-  height: 10rem;
-  z-index: -1;
 }
 
 .users {
   display: grid;
   gap: 4rem;
-  /* background-color: var(--Very-Pale-Blue); */
-  margin-bottom: -15rem;
 }
 
 .users__text > h2 {
   margin-bottom: 1rem;
 }
 
-
-.curve_users_bottom {
-  background: url(../images/bg-section-bottom-mobile-2.svg) no-repeat center;
-  background-size: cover;
-  width: 100%;
-  height: 18rem;
-}
-
 .ready {
-  margin-top: -19rem;
-  margin-bottom: 10rem;
   padding: 2rem;
 }
 
 .ready > h2 {
   font-size: 1.5rem;
   margin-bottom: 2rem;
-}
-
-.curve_footer {
-  background: url(../images/bg-footer-top-mobile.svg) no-repeat center top;
-  background-size: cover;
-  width: 100%;
-  height: 9rem;
 }
 
 footer {
@@ -267,7 +247,7 @@ form {
 #ifmail {
   width: 100%;
   height: 3rem;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
 }
 
 address {
@@ -290,16 +270,14 @@ address {
   margin-bottom: 1.125rem;
 }
 
-.icons {margin-top: -3rem;}
-
 /* Personal info */
 
 .attribution {
   background-color: var(--Very-Dark-Cyan);
   color: white;
-  padding: 0 0 2rem 0;
   font-size: 0.6875rem;
   text-align: center;
+  padding: 1rem;
 }
 
 .attribution a {
