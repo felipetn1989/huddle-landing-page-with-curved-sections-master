@@ -117,8 +117,24 @@ h2 {
   font-size: 1.25rem;
 }
 
+h3 {
+  font-size: 1.25rem;
+  text-transform: uppercase;
+}
+
 .card {
   text-align: center;
+}
+
+.users {
+  padding: 1.75rem;
+}
+
+footer {
+  position: relative;
+  background-color: var(--Very-Dark-Cyan);
+  color: var(--Very-Pale-Blue);
+  padding: 1.75rem;
 }
 
 /* Buttons */
@@ -150,6 +166,8 @@ h2 {
   padding: 0.75rem 2.375rem;
   border-radius: 0.375rem;
   width: 10rem;
+  place-self: center end;
+  font-size: 0.875rem;
 }
 
 /* Images, logos and icons */
@@ -177,10 +195,109 @@ ion-icon {
   height: 1.5rem;
 }
 
+/* */
+
+.card {
+  display: grid;
+  gap: 15rem;
+}
+
+.users::before {
+  content: "";
+  background: url(../images/bg-section-top-mobile-2.svg) no-repeat center;
+  background-size: cover;
+  width: 100%;
+  height: 10rem;
+  z-index: -1;
+}
+
+.users {
+  display: grid;
+  gap: 4rem;
+  /* background-color: var(--Very-Pale-Blue); */
+  margin-bottom: -15rem;
+}
+
+.users__text > h2 {
+  margin-bottom: 1rem;
+}
+
+
+.curve_users_bottom {
+  background: url(../images/bg-section-bottom-mobile-2.svg) no-repeat center;
+  background-size: cover;
+  width: 100%;
+  height: 18rem;
+}
+
+.ready {
+  margin-top: -19rem;
+  margin-bottom: 10rem;
+  padding: 2rem;
+}
+
+.ready > h2 {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.curve_footer {
+  background: url(../images/bg-footer-top-mobile.svg) no-repeat center top;
+  background-size: cover;
+  width: 100%;
+  height: 9rem;
+}
+
+footer {
+  display: grid;
+  gap: 6rem;
+  font-size: 0.875rem;
+}
+
+.newsletter {
+  display: grid;
+  gap: 2rem;
+}
+
+form {
+  display: grid;
+  gap: 1rem;
+}
+
+#ifmail {
+  width: 100%;
+  height: 3rem;
+  border-radius: .5rem;
+}
+
+address {
+  display: grid;
+  gap: 2rem;
+}
+
+.address__top > img {
+  margin-bottom: 1rem;
+}
+
+.phone,
+.email {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.phone {
+  margin-bottom: 1.125rem;
+}
+
+.icons {margin-top: -3rem;}
+
 /* Personal info */
 
 .attribution {
-  margin-top: 3rem;
+  background-color: var(--Very-Dark-Cyan);
+  color: white;
+  padding: 0 0 2rem 0;
   font-size: 0.6875rem;
   text-align: center;
 }
