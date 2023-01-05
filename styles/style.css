@@ -283,8 +283,8 @@ header {
   margin-bottom: 1rem;
 }
 
-.grow> img,
-.flowing> img,
+.grow > img,
+.flowing > img,
 .users > img {
   width: 70vw;
   margin: auto;
@@ -376,4 +376,36 @@ ion-icon:hover {
 
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+/* Media Queries */
+
+@media screen and (min-width: 60em) {
+  .flex_group {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .grow,
+  .users {
+    grid-template-areas: "two one";
+    place-items: center;
+  }
+
+  .flowing {
+    grid-template-areas: "one two";
+    place-items: center;
+  }
+
+  .grow > img,
+  .flowing > img,
+  .users > img {
+    grid-area: one;
+  }
+
+  .grow__text,
+  .flowing__text,
+  .users__text {
+    grid-area: two;
+  }
 }
