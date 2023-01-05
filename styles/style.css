@@ -162,6 +162,11 @@ footer {
   font-weight: var(--fw-bold);
 }
 
+.button:hover {
+  cursor: pointer;
+  opacity: 70%;
+}
+
 .start {
   padding: 0.75rem 2.25rem;
   border-radius: 1.25rem;
@@ -352,6 +357,11 @@ address {
 
 .icons {
   margin-top: -1.75rem;
+}
+
+ion-icon:hover {
+  cursor: pointer;
+  color: aqua;
 }
 
 /* Personal info */
