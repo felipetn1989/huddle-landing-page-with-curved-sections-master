@@ -381,20 +381,104 @@ ion-icon:hover {
 /* Media Queries */
 
 @media screen and (min-width: 60em) {
+  /* General Settings */
+
+  body {
+    font-size: 1.0625rem;
+  }
+
+  h1,
+  h2,
+  h3 {
+    font-family: var(--ff-headings);
+  }
+
+  h1 {
+    font-size: 2.8125rem;
+  }
+
+  h2 {
+    font-size: 2.3125rem;
+  }
+
+  h3 {
+    font-size: 1.25rem;
+    text-transform: uppercase;
+  }
+
+  .card {
+    text-align: left;
+  }
+
+  /* Buttons */
+
+  .try {
+    font-size: 0.9325rem;
+    padding: 0.5625rem 2rem;
+    border-radius: 1.5rem;
+  }
+
+  .start {
+    font-size: 1.1875rem;
+    padding: 1.375rem 2.75rem;
+    border-radius: 2.5rem;
+    width: 22rem;
+  }
+
+  /* */
+
+  header > img {
+    width: 14rem;
+  }
+
+  .card__top {
+    text-align: center;
+    padding: 10rem 10rem 3rem 10rem;
+  }
+
   .flex_group {
     flex-direction: row;
     justify-content: space-around;
+    margin-bottom: 8rem;
+  }
+
+  .stats__number {
+    font-size: 5.5rem;
+  }
+  .stats__text {
+    font-size: 1.375rem;
   }
 
   .grow,
   .users {
     grid-template-areas: "two one";
     place-items: center;
+    grid-auto-columns: 1fr;
+    gap: 10rem;
   }
 
   .flowing {
     grid-template-areas: "one two";
     place-items: center;
+    grid-auto-columns: 1fr;
+    gap: 10rem;
+  }
+
+  .grow,
+  .flowing,
+  .users {
+    margin: 0;
+    padding: 6rem;
+  }
+
+  .ready {
+    display: grid;
+    place-items: center;
+    margin: 9rem;
+  }
+
+  .ready > h2 {
+    font-size: 2.75rem;
   }
 
   .grow > img,
@@ -426,10 +510,16 @@ ion-icon:hover {
       "two one"
       "three three";
     column-gap: 15rem;
+    padding: 5rem;
+  }
+
+  #white_logo {
+    width: 15rem;
   }
 
   form {
     display: flex;
     gap: 2rem;
+    align-items: center;
   }
 }
