@@ -408,4 +408,28 @@ ion-icon:hover {
   .users__text {
     grid-area: two;
   }
+
+  .newsletter {
+    grid-area: one;
+  }
+
+  address {
+    grid-area: two;
+  }
+
+  .icons {
+    grid-area: three;
+  }
+
+  footer {
+    grid-template-areas:
+      "two one"
+      "three three";
+    column-gap: 15rem;
+  }
+
+  form {
+    display: flex;
+    gap: 2rem;
+  }
 }
