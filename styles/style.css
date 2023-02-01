@@ -509,10 +509,15 @@ ion-icon:hover {
     grid-area: three;
   }
 
+  .attribution {
+    grid-area: four;
+  }
+
   footer {
     grid-template-areas:
       "two one"
-      "three three";
+      "three three"
+      "four four";
     column-gap: 15rem;
     padding: 5rem;
   }
