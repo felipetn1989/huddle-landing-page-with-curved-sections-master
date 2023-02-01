@@ -171,7 +171,7 @@ footer {
   padding: 0.75rem 2.25rem;
   border-radius: 1.25rem;
   width: 13rem;
-  font-size: .75rem;
+  font-size: 0.75rem;
 }
 
 .try {
@@ -281,7 +281,7 @@ header {
 .grow__text > h2,
 .flowing__text > h2,
 .users__text > h2 {
-  margin-bottom: .8125rem;
+  margin-bottom: 0.8125rem;
 }
 
 .grow > img,
@@ -396,6 +396,10 @@ ion-icon:hover {
     font-size: 1.0625rem;
   }
 
+  header {
+    padding: 4.75rem 4rem 4.75rem 5rem;
+  }
+
   h1,
   h2,
   h3 {
@@ -403,7 +407,7 @@ ion-icon:hover {
   }
 
   h1 {
-    font-size: 2.8125rem;
+    font-size: 3rem;
   }
 
   h2 {
@@ -431,13 +435,14 @@ ion-icon:hover {
     font-size: 1.1875rem;
     padding: 1.375rem 2.75rem;
     border-radius: 2.5rem;
-    width: 22rem;
+    width: 25rem;
+    margin-top: 1rem;
   }
 
   /* */
 
   header > img {
-    width: 14rem;
+    width: 15rem;
   }
 
   .card__top {
@@ -445,14 +450,25 @@ ion-icon:hover {
     padding: 10rem 10rem 3rem 10rem;
   }
 
+  .card__top p {
+    font-size: 1.25rem;
+    width: 37rem;
+  }
+
+  .card__top img {
+    width: 65rem;
+    margin-top: 3.75rem;
+  }
+
   .flex_group {
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 20.75rem;
     margin-bottom: 8rem;
   }
 
   .stats__number {
-    font-size: 5.5rem;
+    font-size: 6rem;
   }
   .stats__text {
     font-size: 1.375rem;
@@ -477,17 +493,30 @@ ion-icon:hover {
   .flowing,
   .users {
     margin: 0;
-    padding: 6rem;
+    padding: 5rem 8rem;
+  }
+
+  .grow h2 {
+    margin-bottom: 2rem;
+  }
+
+  .flowing h2 {
+    font-size: 2.5rem;
+  }
+
+  .flowing {
+    padding-top: 11.75rem;
   }
 
   .ready {
     display: grid;
     place-items: center;
-    margin: 9rem;
+    margin: 4.75rem 4.75rem 8rem 4.75rem;
   }
 
   .ready > h2 {
-    font-size: 2.75rem;
+    font-size: 2.5rem;
+    margin-bottom: 1.75rem;
   }
 
   .grow > img,
@@ -504,14 +533,34 @@ ion-icon:hover {
 
   .newsletter {
     grid-area: one;
+    margin-top: unset;
+  }
+
+  .newsletter h3 {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+  }
+
+  .newsletter p {
+    width: 25rem;
   }
 
   address {
     grid-area: two;
   }
 
+  .address__top p {
+    width: 20rem;
+    margin-bottom: -1rem;
+  }
+
   .icons {
     grid-area: three;
+    margin-top: 0rem;
+  }
+
+  ion-icon {
+    width: 2.75rem;
   }
 
   .attribution {
@@ -523,17 +572,22 @@ ion-icon:hover {
       "two one"
       "three three"
       "four four";
-    column-gap: 15rem;
-    padding: 5rem;
+    column-gap: 22rem;
+    padding: 4.25rem 7.5rem;
   }
 
   #white_logo {
     width: 15rem;
+    margin-bottom: 1.5rem;
   }
 
   form {
     display: flex;
     gap: 2rem;
     align-items: center;
+  }
+
+  #ifmail {
+    width: 21rem;
   }
 }
